@@ -602,8 +602,15 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
+}
+
+.portfolio-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the container takes the full height of the parent */
 }
 
 .img-thumbnail {
@@ -643,6 +650,18 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+}
+
+.custom-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+}
+
+.custom-row {
+  display: flex;
+  justify-content: space-around;
 }
 
 @media (min-width: 576px) {
@@ -1111,7 +1130,7 @@ progress {
   }
   .col-md-3 {
     flex: 0 0 auto;
-    width: 33.2%;
+    width: 25%;
   }
   .col-md-4 {
     flex: 0 0 auto;
@@ -7579,6 +7598,7 @@ textarea.form-control-lg {
   margin-bottom: 1rem !important;
 }
 
+
 .my-4 {
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
@@ -8090,6 +8110,21 @@ textarea.form-control-lg {
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
+}
+
+#about {
+  padding: 40px 0; /* Atur padding sesuai kebutuhan Anda */
+  text-align: justify;
+}
+
+.about1 {
+  max-width: 800px; /* Sesuaikan dengan preferensi lebar maksimum */
+  margin: 0 auto; /* Tengahkan container di halaman */
+}
+.about2 {
+  color: #777; /* Sesuaikan dengan warna yang diinginkan */
+  text-align: justify;
+  text-indent: 60px;
 }
 
 .text-muted {
